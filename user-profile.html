@@ -4,22 +4,40 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Taskforce</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="build/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
-    <a class="header-logo">
-        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="101.668px" height="83.984px" alt="Седона">
-    </a>
-    <nav>
-        <div>
-            <ul>
-
+    <nav class="main-nav">
+        <a href='#' class="header-logo">
+            <img class="logo-image" src="img/logotype.png" width=227 height=60 alt="taskforce">
+        </a>
+        <div class="nav-wrapper">
+            <ul class="nav-list">
+                <li class="list-item list-item--active">
+                    <a class="link link--nav" >Новое</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="link link--nav" >Мои задания</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="link link--nav" >Создать задание</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="link link--nav" >Настройки</a>
+                </li>
             </ul>
         </div>
     </nav>
+    <div class="user-block">
+        <a href="#">
+            <img class="user-photo" src="img/man-glasses.jpg" width="55" height="55" alt="Аватар">
+        </a>
+        <div class="user-menu">
+            <p class="user-name">Василий</p>
+        </div>
+    </div>
 
 </header>
 </body>
