@@ -25,11 +25,17 @@
   text-decoration: none;
   margin-right: 15px;
   border-radius: 25px;
-  &:hover {
+  &:hover:not(.list-item--active){
     background-color: #d6d6d6;
   }
-  &:hover .link--nav {
+  &:hover:not(.list-item--active) .link--nav {
     color: #05060f;
+  }
+  &:active:not(.list-item--active){
+    background-color: #ffffff;
+  }
+  &:active:not(.list-item--active) .link--nav {
+    color: #4c5cf0;
   }
 }
 .list-item--active {
@@ -37,21 +43,68 @@
   & .link {
     color: #ffffff;
   }
-  &:hover {
-    background-color: #05060f;
-  }
-  &:hover .link--nav {
-    color: #ffffff;
-  }
 }
 .user-block {
   display: flex;
+}
+.popup-head {
+  display: none;
+  min-width: 216px;
+  border: 1px solid #05060f;
+  border-radius: 12px;
+  background-color: #ffffff;
+  padding: 17px 12px;
+}
+.popup-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-item {
+  padding: 15px;
+  &:hover {
+    background-color: #f5f5f6;
+    border-radius: 5px;
+  }
+  & a {
+    color: #05060f;
+  }
 }
 .user-photo {
   border-radius: 4px;
 }
 .user-name {
+  position: relative;
   font-weight: 700;
   padding-right: 45px;
   padding-left: 12px;
+  padding-bottom: 10px;
+}
+.user-name::after{
+  content: "";
+  height: 10px;
+  width: 18px;
+  position: absolute;
+  top: 8px;
+  right: 6px;
+
+  background-image: url("/img/arrow-hover.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.user-name:hover::after {
+  content: "";
+  height: 30px;
+  width: 30px;
+  top: -3px;
+  right: 0;
+
+  background-image: url("/img/arrow.svg");
+}
+.user-name:hover ~ .popup-head,
+.popup-head:hover {
+  display: block;
+  position: absolute;
+  top: 60px;
+  right: 10px;
 }
