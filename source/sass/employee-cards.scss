@@ -1,4 +1,4 @@
-.employee-card {
+.right-card {
   width: 240px;
   padding: 25px 30px;
   padding-top: 20px;
@@ -8,11 +8,14 @@
     margin-top: 80px;
   }
 }
-.statistics {
+.right-column .task-card {
+  margin-top: 90px;
+}
+.black {
   background-color: #23242c;
   color: #ffffff;
 }
-.contacts {
+.white {
   color: #23242c;
   background-color: #ffffff;
   display: flex;
@@ -28,6 +31,29 @@
     top: 53px;
   }
 }
+.file-card {
+  margin-top: 77px;
+  padding-bottom: 45px;
+  & .head-card {
+    padding-left: 70px;
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 46px;
+      height: 58px;
+      top: -35px;
+      left: 0;
+      background-image: url("/img/file-icon.svg");
+    }
+  }
+  &::before {
+    width: 0;
+    height: 0;
+  }
+}
 .head-card {
   font-size: 16px;
   letter-spacing: 1.5px;
@@ -35,7 +61,7 @@
   margin-top: 0;
   margin-bottom: 25px;
 }
-.statistics-list {
+.black-list {
   margin: 0;
   margin-top: 15px;
   padding: 0;
@@ -59,7 +85,7 @@
   margin-top: 31px;
   margin-bottom: 25px;
   & a {
-    padding-left: 50px;
+    padding-left: 25px;
     position: relative;
   }
   & a::after {
@@ -85,4 +111,27 @@
 }
 .link--tg::after {
   background-image: url("/img/tg-icon.svg");
+}
+.file-card .link--clip::after {
+  background-image: url("/img/clip-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 3px;
+  left: -8px;
+}
+.file-card .link--clip::before {
+  position: absolute;
+  content: "";
+  width: 268px;
+  height: 1px;
+  background-color: #f5f5f6;
+  top: 53px;
+  left: 1px;
+}
+.file-size {
+  color: #989898;
+  font-size: 12px;
+  margin: 0;
+  padding-left: 25px;
+  line-height: 18px;
 }

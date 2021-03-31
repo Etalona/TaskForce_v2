@@ -1,8 +1,9 @@
-.customer-feedback {
+.response-card {
   display: flex;
   background-color: #f5f5f6;
   border-radius: 15px;
   margin-bottom: 20px;
+  position: relative;
 }
 .customer-photo {
   border-bottom-left-radius: 15px;
@@ -19,6 +20,10 @@
   font-style: italic;
   font-size: 16px;
 }
+.feedback-name {
+font-size: 22px;
+  margin-bottom: 3px;
+}
 .task {
   margin: 0;
   color: #777777;
@@ -26,6 +31,52 @@
 .customer-time {
   font-size: 12px;
   color: #777777;
-  margin-bottom: 0;
+  margin: 0;
   align-self: flex-end;
+}
+.response-wrapper {
+  display: flex;
+}
+.reviews {
+  font-size: 14px;
+  padding-left: 50px;
+  margin: 0;
+  margin-top: 3px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url("/img/like.svg");
+    top: 0;
+    left: 25px;
+  }
+}
+.response-message {
+  width: 416px;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: auto;
+}
+.price {
+  color: #fa6400;
+  font-weight: 700;
+}
+.price--small {
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+.button-popup {
+  display: none;
+}
+.response-card:hover .button-popup,
+.button-popup:hover {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  content: "";
+  top: 22px;
+  right: -145px;
+
 }
