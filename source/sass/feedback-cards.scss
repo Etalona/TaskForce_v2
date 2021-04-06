@@ -20,16 +20,16 @@
   font-style: italic;
   font-size: 16px;
 }
-.feedback-name {
-font-size: 22px;
+.link--big {
+  font-size: 22px;
   margin-bottom: 3px;
 }
 .task {
   margin: 0;
   color: #777777;
 }
-.customer-time {
-  font-size: 12px;
+.info-text {
+  font-size: 14px;
   color: #777777;
   margin: 0;
   align-self: flex-end;
@@ -58,14 +58,6 @@ font-size: 22px;
   font-size: 16px;
   margin-top: 5px;
   margin-bottom: auto;
-}
-.price {
-  color: #fa6400;
-  font-weight: 700;
-}
-.price--small {
-  font-size: 32px;
-  margin-bottom: 6px;
 }
 .button-popup {
   display: none;

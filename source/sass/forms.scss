@@ -1,0 +1,66 @@
+.search-form .head-card:not(.head-card:first-child)  {
+  margin-top: 33px;
+  margin-bottom: 0;
+}
+.search-form .head-card:first-child {
+  margin-bottom: 0;
+}
+.search-form input[type=checkbox] {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+.search-form input[type=checkbox] ~ label {
+  position: relative;
+  display: inline-block;
+  line-height: 25px;
+  padding-left: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.search-form input[type=checkbox] ~ label::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border-radius: 3px;
+}
+.search-form input[type=checkbox]:checked ~ label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url("/img/checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.search-form input[type=checkbox]:hover ~ label::before {
+  background-color: #e5e5e5;
+}
+.search-form select {
+  margin-top: 20px;
+  width: 100%;
+  padding: 13px 16px;
+  margin-bottom: 50px;
+  font-size: 15px;
+  color: #8f9bb3;
+}
+.search-form .button {
+  padding: 14px 57px;
+  font-size: 19px;
+  margin-left: 70px;
+  margin-bottom: 0;
+  border: none;
+}

@@ -30,6 +30,13 @@
     text-decoration: underline;
   }
 }
+.link--page {
+  font-size: 24px;
+  font-weight: 700;
+  color: #23242c;
+  display: block;
+  padding: 12px 18px;
+}
 .button {
   display: inline-block;
   padding: 27px 25px;
@@ -50,6 +57,17 @@
   background-color: #fa6400;
   &:hover {
     background-color: #f46200;
+  }
+}
+.button--black {
+  background-color: #05060f;
+  border-radius: 15px;
+  padding: 20px 40px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: -46px;
+  &:hover {
+    background-color: #4d38f5;
   }
 }
 .button--small {
@@ -83,4 +101,35 @@
 .head-wrapper {
   display: flex;
   justify-content: space-between;
+}
+.price {
+  color: #fa6400;
+  font-weight: 700;
+}
+.price--small {
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+.price--task {
+  color: #05060f;
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.side-menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -25px;
+  display: flex;
+  flex-direction: column;
+
+}
+.side-menu-item {
+align-self: flex-start;
+}
+.side-menu-item:hover,
+.side-menu-item:hover a {
+  background-color: #d8d8d8;
+  color: #05060f;
 }
