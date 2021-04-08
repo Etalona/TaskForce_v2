@@ -46,6 +46,7 @@
   font-size: 22px;
   font-weight: bold;
   color: #ffffff;
+  cursor: pointer;
 }
 .button--blue {
   background-color: #4d38f5;
@@ -82,6 +83,9 @@
   margin: 0 auto;
   width: 1220px;
   padding: 20px 30px;
+}
+.container--registration {
+  width: 684px;
 }
 .main-content {
   display: flex;
@@ -145,4 +149,7 @@
   & .head-regular {
     margin-top: 34px;
   }
+}
+.center-block {
+  margin: 0 auto;
 }
