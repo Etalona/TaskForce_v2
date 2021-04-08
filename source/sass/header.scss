@@ -15,7 +15,7 @@
   display: flex;
 }
 .nav-wrapper {
-  min-width: 668px;
+  min-width: 688px;
   display: flex;
   align-items: center;
   margin-left: 60px;
@@ -87,7 +87,6 @@
   position: absolute;
   top: 8px;
   right: 6px;
-
   background-image: url("/img/arrow-hover.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -98,7 +97,6 @@
   width: 30px;
   top: -3px;
   right: 0;
-
   background-image: url("/img/arrow.svg");
 }
 .user-name:hover ~ .popup-head,
