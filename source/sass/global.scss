@@ -91,6 +91,9 @@
   display: flex;
   justify-content: space-between;
 }
+.main-content--left {
+  justify-content: flex-start;
+}
 .head-main {
   font-size: 30px;
   margin-bottom: 27px;
@@ -152,4 +155,7 @@
 }
 .center-block {
   margin: 0 auto;
+}
+.left-menu--edit .side-menu-item {
+  width: 157px;
 }

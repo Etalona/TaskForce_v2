@@ -83,6 +83,7 @@ input[type=checkbox]:hover ~ label::before {
     margin-bottom: 10px;
     margin-top: 27px;
     color: #989898;
+    font-size: 16px;
   }
   & input,
   & select {
@@ -100,7 +101,6 @@ input[type=checkbox]:hover ~ label::before {
   width: 642px;
 }
 .half-wrapper {
-  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -108,7 +108,7 @@ input[type=checkbox]:hover ~ label::before {
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
-  padding-left: 28px;
+  padding-left: 32px;
   margin-bottom: 0;
   color: #05060f;
 }
@@ -124,8 +124,85 @@ input[type=checkbox]:hover ~ label::before {
 }
 .registration-form input[type=button] {
   border: none;
+  padding: 15px 43px;
   margin-top: 24px;
   font-size: 19px;
   width: 221px;
   margin-left: 440px;
+}
+.my-profile-form {
+  margin-left: 180px;
+  & h3 {
+    margin-top: 30px;
+  }
+}
+.photo-editing {
+  display: flex;
+  align-items: center;
+  & .button {
+    font-size: 19px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 50px;
+    margin-left: 23px;
+  }
+}
+.form-label {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #989898;
+}
+.my-profile-form {
+  width: 512px;
+  & .control-label {
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 27px;
+    color: #989898;
+    font-size: 16px;
+  }
+  & input,
+  & textarea {
+    padding: 9px;
+    border-radius: 7px;
+    border: solid 2px #989898;
+  }
+  & textarea {
+    min-height: 130px;
+  }
+}
+.my-profile-form input[type=email],
+.my-profile-form input[type=tel] {
+  width: 277px;
+}
+.my-profile-form input[type=date],
+.my-profile-form .half-wrapper input[type=text] {
+  width: 170px;
+}
+.my-profile-form input[type=date] {
+  height: 20px;
+}
+.my-profile-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+.my-profile-form input[type=checkbox] ~ label {
+  font-weight: 400;
+  width: 174px;
+}
+.my-profile-form input[type=checkbox] ~ label::before {
+  background-color: #3366ff;
+}
+.my-profile-form input[type=checkbox]:checked ~ label::after {
+  background-image: url("/img/checkmark-white-big.svg");
+}
+.my-profile-form input[type=button] {
+  border: none;
+  padding: 15px 43px;
+  margin-top: 41px;
+  font-size: 19px;
+  width: 193px;
+  display: inline-block;
+  float: right;
 }
