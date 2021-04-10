@@ -5,6 +5,22 @@
 .search-form .head-card:first-child {
   margin-bottom: 0;
 }
+.search-form select {
+  margin-top: 20px;
+  width: 100%;
+  padding: 13px 16px;
+  margin-bottom: 50px;
+  font-size: 15px;
+  color: #8f9bb3;
+}
+.search-form .button {
+  padding: 14px 57px;
+  font-size: 19px;
+  margin-left: 70px;
+  margin-bottom: 0;
+  border: none;
+}
+
 input[type=checkbox] {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -49,25 +65,12 @@ input[type=checkbox]:checked ~ label::after {
 input[type=checkbox]:hover ~ label::before {
   background-color: #e5e5e5;
 }
-.search-form select {
-  margin-top: 20px;
-  width: 100%;
-  padding: 13px 16px;
-  margin-bottom: 50px;
-  font-size: 15px;
-  color: #8f9bb3;
-}
-.search-form .button {
-  padding: 14px 57px;
-  font-size: 19px;
-  margin-left: 70px;
-  margin-bottom: 0;
-  border: none;
-}
-.registration-form {
+
+.regular-form {
   margin-top: 55px;
   padding: 30px 40px;
   background-color: #f5f5f6;
+  border-radius: 24px;
   width: 664px;
   font-size: 16px;
   & .head-main {
@@ -83,14 +86,35 @@ input[type=checkbox]:hover ~ label::before {
     margin-bottom: 10px;
     margin-top: 27px;
     color: #989898;
-    font-size: 16px;
   }
   & input,
-  & select {
+  & select,
+  & textarea {
     padding: 9px;
     border-radius: 7px;
     border: solid 2px #989898;
-    width: 293px;
+  }
+}
+
+.half-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.form-label {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #989898;
+}
+input[type=date] {
+  height: 20px;
+}
+
+.registration-form {
+  padding-bottom: 122px;
+  & input,
+  & select {
+    width: 295px;
   }
   & select {
     padding-top: 7px;
@@ -99,10 +123,6 @@ input[type=checkbox]:hover ~ label::before {
 }
 .registration-form .form-group input[type=text] {
   width: 642px;
-}
-.half-wrapper {
-  display: flex;
-  justify-content: space-between;
 }
 .registration-form input[type=checkbox] ~ label {
   font-size: 18px;
@@ -122,20 +142,7 @@ input[type=checkbox]:hover ~ label::before {
   height: 18px;
   background-image: url("/img/checkmark-white.svg");
 }
-.registration-form input[type=button] {
-  border: none;
-  padding: 15px 43px;
-  margin-top: 24px;
-  font-size: 19px;
-  width: 221px;
-  margin-left: 440px;
-}
-.my-profile-form {
-  margin-left: 180px;
-  & h3 {
-    margin-top: 30px;
-  }
-}
+
 .photo-editing {
   display: flex;
   align-items: center;
@@ -147,20 +154,22 @@ input[type=checkbox]:hover ~ label::before {
     margin-left: 23px;
   }
 }
-.form-label {
-  margin-bottom: 12px;
-  font-size: 16px;
-  font-weight: 700;
-  color: #989898;
-}
 .my-profile-form {
   width: 512px;
+  margin-left: 180px;
+  & h3 {
+    margin-top: 30px;
+  }
   & .control-label {
     font-weight: 700;
     margin-bottom: 10px;
     margin-top: 27px;
     color: #989898;
     font-size: 16px;
+  }
+  & .form-group {
+    display: flex;
+    flex-direction: column;
   }
   & input,
   & textarea {
@@ -180,16 +189,10 @@ input[type=checkbox]:hover ~ label::before {
 .my-profile-form .half-wrapper input[type=text] {
   width: 170px;
 }
-.my-profile-form input[type=date] {
-  height: 20px;
-}
-.my-profile-form .form-group {
-  display: flex;
-  flex-direction: column;
-}
 .my-profile-form input[type=checkbox] ~ label {
   font-weight: 400;
   width: 174px;
+  margin-top: 5px;
 }
 .my-profile-form input[type=checkbox] ~ label::before {
   background-color: #3366ff;
@@ -197,12 +200,66 @@ input[type=checkbox]:hover ~ label::before {
 .my-profile-form input[type=checkbox]:checked ~ label::after {
   background-image: url("/img/checkmark-white-big.svg");
 }
-.my-profile-form input[type=button] {
+
+.add-task-form {
+  & select {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 344px;
+  }
+  & textarea {
+    min-height: 108px;
+  }
+  & .half-wrapper {
+    justify-content: flex-start;
+  }
+}
+.add-task-form .half-wrapper input{
+  width: 177px;
+  margin-right: 50px;
+}
+.new-file {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 661px;
+  height: 128px;
+  border: 1px dashed #989898;
+  border-radius: 7px;
+  background-color: #ffffff;
+}
+.add-file {
+  font-size: 16px;
+  color: #989898;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 53px;
+    background-image: url("/img/upload-icon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    top: -59px;
+    left: 57px;
+  }
+}
+
+input[type=button] {
   border: none;
   padding: 15px 43px;
-  margin-top: 41px;
+  margin-top: 24px;
   font-size: 19px;
-  width: 193px;
+  width: 221px;
   display: inline-block;
   float: right;
+}
+.add-task-form input[type=button] {
+  width: 171px;
+  padding: 15px 26px;
+  margin-top: 29px;
+}
+.my-profile-form input[type=button] {
+  width: 193px;
+  margin-top: 56px;
 }
