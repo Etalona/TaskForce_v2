@@ -17,17 +17,18 @@ gulp.task("css", function () {
       autoprefixer()
     ]))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
 
 gulp.task("server", function () {
   server.init({
-    server: ".",
-    notify: false,
-    open: true,
+    server: {
+      baseDir: 'source'
+    },
     cors: true,
-    ui: false
+    notify: false,
+    ui: false,
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
