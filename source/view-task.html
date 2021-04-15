@@ -6,7 +6,7 @@
     <title>Taskforce</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="overlay">
+<body>
 <header class="page-header">
     <nav class="main-nav">
         <a href='#' class="header-logo">
@@ -163,10 +163,30 @@
     </div>
 </section>
 <section class="pop-up pop-up--completion">
+    <div class="pop-up--wrapper">
+        <h4>Завершение задания</h4>
+        <p class="pop-up-text">
+            Вы собираетесь отметить это задание как выполненное.
+            Пожалуйста, оставьте отзыв об исполнителе и отметьте отдельно, если возникли проблемы.
+        </p>
+        <div class="completion-form regular-form">
+            <form>
+                <div class="form-group">
+                    <label class="control-label" for="username">Ваш комментарий</label>
+                    <textarea id="username"></textarea>
+                </div>
+                <a class="button button--pop-up button--orange">Отказаться</a>
+            </form>
+        </div>
 
+        <div class="button-container">
+            <button class="button--close" type="button">Закрыть окно</button>
+        </div>
+    </div>
 </section>
 <section class="pop-up pop-up--addition">
 
 </section>
+<div class="overlay"></div>
 </body>
 </html>

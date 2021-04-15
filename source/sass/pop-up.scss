@@ -1,18 +1,14 @@
-.pop-up--refusal {
+.pop-up {
   width: 468px;
   padding: 20px;
   padding-bottom: 12px;
-}
-.pop-up {
   background-color: #ffffff;
-  text-align: center;
   position: fixed;
-  top: 100px;
+  top: 290px;
   z-index: 30;
   left: 50%;
-  margin-left: -160px;
-  padding-top: 15px;
-  display: none;
+  margin-left: -254px;
+  display: flex;
   & h4 {
     text-transform: none;
     letter-spacing: normal;
@@ -36,6 +32,7 @@
   border-radius: 5px;
   position: relative;
   font-size: 0;
+  cursor: pointer;
 }
 .button--close:after {
   position: absolute;
@@ -54,4 +51,30 @@
   content: "";
   top: 0;
   right: 0;
+  width: 25px;
+  height: 25px;
+}
+.completion-form {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  width: 464px;
+  & .control-label {
+    margin-top: 0;
+    cursor: auto;
+  }
+  & textarea {
+    min-width: 444px;
+    max-width: 444px;
+    min-height: 96px;
+  }
+}
+.pop-up--refusal {
+  display: none;
+}
+.pop-up--completion {
+
+}
+.pop-up--addition {
+  display: none;
 }
