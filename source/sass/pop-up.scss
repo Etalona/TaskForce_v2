@@ -1,0 +1,57 @@
+.pop-up--refusal {
+  width: 468px;
+  padding: 20px;
+  padding-bottom: 12px;
+}
+.pop-up {
+  background-color: #ffffff;
+  text-align: center;
+  position: fixed;
+  top: 100px;
+  z-index: 30;
+  left: 50%;
+  margin-left: -160px;
+  padding-top: 15px;
+  display: none;
+  & h4 {
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 14px;
+  }
+}
+.pop-up--wrapper {
+  position: relative;
+}
+.pop-up-text {
+  margin-top: 10px;
+  margin-bottom: 17px;
+  font-size: 16px;
+}
+.button--close {
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: relative;
+  font-size: 0;
+}
+.button--close:after {
+  position: absolute;
+  top: 3px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "\274c"; /* use the hex value here... */
+  font-size: 15px;
+  color: #000000;
+  line-height: 15px;
+  text-align: center;
+}
+.button-container {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+}

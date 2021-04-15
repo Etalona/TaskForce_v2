@@ -9,62 +9,71 @@
   margin-top: 20px;
   width: 100%;
   padding: 13px 16px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   font-size: 15px;
   color: #8f9bb3;
 }
-.search-form .button {
-  padding: 14px 57px;
-  font-size: 19px;
-  margin-left: 70px;
-  margin-bottom: 0;
-  border: none;
+.search-form {
+  padding-bottom: 80px;
 }
-
+.checkbox-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 input[type=checkbox] {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding:0 !important;
-  border:0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
+  transform: scale(1.8);
+  margin-right: 15px;
+  margin-left: 5px;
 }
-input[type=checkbox] ~ label {
-  position: relative;
-  display: inline-block;
+.control-label {
   line-height: 25px;
-  padding-left: 40px;
   margin-top: 20px;
   cursor: pointer;
 }
-input[type=checkbox] ~ label::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 25px;
-  height: 25px;
-  background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  border-radius: 3px;
-}
-input[type=checkbox]:checked ~ label::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 25px;
-  height: 25px;
-  background-image: url("/img/checkmark.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-input[type=checkbox]:hover ~ label::before {
-  background-color: #e5e5e5;
-}
+//input[type=checkbox] {
+//  position: absolute !important;
+//  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+//  clip: rect(1px, 1px, 1px, 1px);
+//  padding:0 !important;
+//  border:0 !important;
+//  height: 1px !important;
+//  width: 1px !important;
+//  overflow: hidden;
+//}
+//input[type=checkbox] ~ label {
+//  position: relative;
+//  display: inline-block;
+//  line-height: 25px;
+//  padding-left: 40px;
+//  margin-top: 20px;
+//  cursor: pointer;
+//}
+//input[type=checkbox] ~ label::before{
+//  content: "";
+//  position: absolute;
+//  left: 0;
+//  top: 0;
+//  width: 25px;
+//  height: 25px;
+//  background-color: #ffffff;
+//  background-repeat: no-repeat;
+//  background-position: 0 0;
+//  border-radius: 3px;
+//}
+//input[type=checkbox]:checked ~ label::after {
+//  content: "";
+//  position: absolute;
+//  left: 0;
+//  top: 0;
+//  width: 25px;
+//  height: 25px;
+//  background-image: url("/img/checkmark.svg");
+//  background-repeat: no-repeat;
+//  background-position: center;
+//}
+//input[type=checkbox]:hover ~ label::before {
+//  background-color: #e5e5e5;
+//}
 
 .regular-form {
   margin-top: 55px;
@@ -124,23 +133,17 @@ input[type=date] {
 .registration-form .form-group input[type=text] {
   width: 642px;
 }
-.registration-form input[type=checkbox] ~ label {
+.registration-form input[type=checkbox] {
+  transform: scale(1.4);
+  width: 18px;
+  margin-left: 0;
+}
+.registration-form .checkbox-wrapper .control-label {
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
-  padding-left: 32px;
   margin-bottom: 0;
   color: #05060f;
-}
-.registration-form input[type=checkbox] ~ label::before {
-  width: 18px;
-  height: 18px;
-  background-color: #3366ff;
-}
-.registration-form input[type=checkbox]:checked ~ label::after {
-  width: 18px;
-  height: 18px;
-  background-image: url("/img/checkmark-white.svg");
 }
 
 .photo-editing {
@@ -189,17 +192,13 @@ input[type=date] {
 .my-profile-form .half-wrapper input[type=text] {
   width: 170px;
 }
-.my-profile-form input[type=checkbox] ~ label {
+.my-profile-form .checkbox-profile .control-label {
+  display: inline-block;
   font-weight: 400;
-  width: 174px;
+  width: 200px;
   margin-top: 5px;
 }
-.my-profile-form input[type=checkbox] ~ label::before {
-  background-color: #3366ff;
-}
-.my-profile-form input[type=checkbox]:checked ~ label::after {
-  background-image: url("/img/checkmark-white-big.svg");
-}
+
 
 .add-task-form {
   & select {
@@ -262,4 +261,7 @@ input[type=button] {
 .my-profile-form input[type=button] {
   width: 193px;
   margin-top: 56px;
+}
+.search-form input[type=button] {
+  width: 171px;
 }

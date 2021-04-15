@@ -79,6 +79,10 @@
   font-size: 19px;
   margin-bottom: 10px;
 }
+.button--pop-up {
+  padding: 15px 40px;
+  margin-top: 10px;
+}
 .container {
   margin: 0 auto;
   width: 1220px;
@@ -162,3 +166,13 @@
 .left-menu--edit .side-menu-item {
   width: 157px;
 }
+//.overlay {
+//  position: fixed;
+//  top: 0;
+//  left: 0;
+//  width: 100%;
+//  height: 100%;
+//  background-color: rgba(0, 0, 0, 0.5);
+//  z-index: 29;
+//  display: block;
+//}
