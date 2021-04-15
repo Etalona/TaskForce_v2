@@ -47,7 +47,7 @@
       height: 58px;
       top: -35px;
       left: 0;
-      background-image: url("/img/file-icon.svg");
+      background-image: url("../img/file-icon.svg");
     }
   }
   &::before {
@@ -103,16 +103,16 @@
   }
 }
 .link--phone::after {
-  background-image: url("/img/phone-icon.svg");
+  background-image: url("../img/phone-icon.svg");
 }
 .link--email::after {
-  background-image: url("/img/email-icon.svg");
+  background-image: url("../img/email-icon.svg");
 }
 .link--tg::after {
-  background-image: url("/img/tg-icon.svg");
+  background-image: url("../img/tg-icon.svg");
 }
 .file-card .link--clip::after {
-  background-image: url("/img/clip-icon.svg");
+  background-image: url("../img/clip-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
   top: 3px;

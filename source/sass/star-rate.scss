@@ -4,7 +4,7 @@
 .stars-rating span::before {
   position: absolute;
   content: "";
-  background-image: url("/img/star-empty.svg");
+  background-image: url("../img/star-empty.svg");
   background-size: 25px;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,5 +33,5 @@
   height: 28px;
 }
 .stars-rating .fill-star::before  {
-  background-image: url("/img/star-fill.svg");
+  background-image: url("../img/star-fill.svg");
 }
