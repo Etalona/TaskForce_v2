@@ -1,10 +1,12 @@
 .pop-up {
-  width: 468px;
+  width: 448px;
   padding: 20px;
   padding-bottom: 12px;
+  padding-right: 40px;
   background-color: #ffffff;
+  border-radius: 8px;
   position: fixed;
-  top: 290px;
+  top: 200px;
   z-index: 30;
   left: 50%;
   margin-left: -254px;
@@ -16,13 +18,29 @@
     margin: 0;
     margin-bottom: 14px;
   }
+  & .form-group {
+    margin-bottom: 15px;
+  }
+  & .completion-head {
+    margin-bottom: 0;
+  }
+  & input[type=submit] {
+    width: 171px;
+  }
+  & .button--pop-up {
+    float: left;
+    font-size: 19px;
+    padding: 15px 40px;
+    margin-top: 25px;
+  }
 }
 .pop-up--wrapper {
   position: relative;
+  width: 448px;
 }
 .pop-up-text {
   margin-top: 10px;
-  margin-bottom: 17px;
+  margin-bottom: 12px;
   font-size: 16px;
 }
 .button--close {
@@ -49,12 +67,12 @@
 .button-container {
   position: absolute;
   content: "";
-  top: 0;
-  right: 0;
+  top: -5px;
+  right: -20px;
   width: 25px;
   height: 25px;
 }
-.completion-form {
+.pop-up--form {
   background-color: #ffffff;
   margin: 0;
   padding: 0;
@@ -64,17 +82,37 @@
     cursor: auto;
   }
   & textarea {
-    min-width: 444px;
-    max-width: 444px;
+    min-width: 424px;
+    max-width: 424px;
     min-height: 96px;
   }
 }
 .pop-up--refusal {
   display: none;
+  & .button--pop-up {
+    margin-top: 10px;
+  }
 }
 .pop-up--completion {
-
+  //display: none;
+  & .form-group:last-of-type .control-label {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 7px;
+  color: #05060f;
+  cursor: pointer;
+  }
+  & .form-group:last-of-type {
+    margin-bottom: 10px;
+  }
 }
 .pop-up--addition {
   display: none;
+  & input[type=text] {
+    width: 150px;
+  }
+  & .button--pop-up {
+    margin-top: 10px;
+  }
 }

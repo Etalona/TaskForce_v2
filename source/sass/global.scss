@@ -60,6 +60,18 @@
     background-color: #f46200;
   }
 }
+.button--pink {
+  background-color: #fd306e;
+  &:hover {
+    background-color: #d52057;
+  }
+}
+.button--yellow {
+  background-color: #f5c644;
+  &:hover {
+    background-color: #f3be2b;
+  }
+}
 .button--black {
   background-color: #05060f;
   border-radius: 15px;
@@ -78,11 +90,6 @@
   padding: 13px 35px;
   font-size: 19px;
   margin-bottom: 10px;
-}
-.button--pop-up {
-  font-size: 19px;
-  padding: 15px 40px;
-  margin-top: 10px;
 }
 .container {
   margin: 0 auto;
