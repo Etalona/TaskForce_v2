@@ -12,6 +12,7 @@
   margin-bottom: 25px;
   font-size: 15px;
   color: #8f9bb3;
+  border-radius: 4px;
 }
 .search-form {
   padding-bottom: 80px;
@@ -32,6 +33,16 @@ input[type=checkbox] {
 .control-label input[type=checkbox] {
   margin-top: 20px;
 }
+input:not(input[type=submit]),
+form select,
+form textarea {
+    &:hover,
+    &:active {
+      border-color: #23242c;
+      border-radius: 7px;
+    }
+}
+
 //input[type=checkbox] {
 //  position: absolute !important;
 //  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -86,7 +97,7 @@ input[type=checkbox] {
   font-size: 16px;
   & .head-main {
     margin-top: 5px;
-    margin-bottom: 7px;
+    margin-bottom: 30px;
   }
   & .form-group {
     display: flex;
@@ -95,8 +106,8 @@ input[type=checkbox] {
   & .control-label {
     font-weight: 700;
     margin-bottom: 10px;
-    margin-top: 27px;
     color: #989898;
+    font-size: 16px;
   }
   & input,
   & select,
@@ -112,7 +123,8 @@ input[type=checkbox] {
   justify-content: space-between;
 }
 .form-label {
-  margin-bottom: 12px;
+  margin-top: 0;
+  margin-bottom: 2px;
   font-size: 16px;
   font-weight: 700;
   color: #989898;
@@ -128,7 +140,6 @@ input[type=date] {
     width: 295px;
   }
   & select {
-    margin-top: 17px;
     padding-top: 7px;
     padding-bottom: 7px;
   }
@@ -141,7 +152,7 @@ input[type=date] {
   width: 18px;
   margin-left: 0;
 }
-.registration-form .form-group:last-of-type .control-label {
+.registration-form .checkbox-label {
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
@@ -152,6 +163,7 @@ input[type=date] {
 .photo-editing {
   display: flex;
   align-items: center;
+  margin-bottom: 13px;
   & .button {
     font-size: 19px;
     padding-top: 15px;
@@ -169,7 +181,7 @@ input[type=date] {
   & .control-label {
     font-weight: 700;
     margin-bottom: 10px;
-    margin-top: 27px;
+    margin-top: 3px;
     color: #989898;
     font-size: 16px;
   }
@@ -188,6 +200,9 @@ input[type=date] {
     max-width: 490px;
     min-height: 130px;
   }
+  & img {
+    border-radius: 4px;
+  }
 }
 .my-profile-form input[type=email],
 .my-profile-form input[type=tel] {
@@ -201,7 +216,8 @@ input[type=date] {
   display: inline-block;
   font-weight: 400;
   width: 200px;
-  margin-top: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .add-task-form {
@@ -232,6 +248,7 @@ input[type=date] {
   border: 1px dashed #989898;
   border-radius: 7px;
   background-color: #ffffff;
+  margin-top: 11px;
 }
 .add-file {
   font-size: 16px;
@@ -270,4 +287,30 @@ input[type=submit] {
 }
 .search-form input[type=submit] {
   width: 171px;
+}
+.help-block {
+  visibility: hidden;
+}
+.has-error  {
+  & .help-block {
+    visibility: visible;
+  }
+  & input,
+  & select,
+  & textarea {
+    border-color: #fa6400;
+  }
+}
+form .has-error {
+  & input:hover,
+  & select:hover,
+  & textarea:hover {
+    border-color: #fa6400;
+  }
+}
+
+.help-block {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  color: #fa6400;
 }

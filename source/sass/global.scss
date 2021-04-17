@@ -134,6 +134,8 @@
   font-size: 22px;
   margin-top: 0;
   margin-bottom: 0;
+  width: 150px;
+  text-align: right;
 }
 .side-menu-list {
   list-style: none;
@@ -163,7 +165,7 @@
   width: 725px;
 }
 .left-column--task {
-  margin-right: 47px;
+  margin-right: 175px;
   & .head-regular {
     margin-top: 34px;
   }
@@ -182,5 +184,5 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 29;
-  display: block;
+  display: none;
 }
