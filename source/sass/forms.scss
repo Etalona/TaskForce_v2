@@ -1,3 +1,24 @@
+input:not(input[type=submit]),
+form select,
+form textarea {
+  &:hover,
+  &:active {
+    border-color: #23242c;
+    border-radius: 7px;
+  }
+}
+select {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-image: url('../img/arrow-select.svg');
+  background-repeat: no-repeat;
+  background-size: 20px 12px;
+  background-position: 260px 14px;
+}
 .search-form .head-card:not(.head-card:first-child)  {
   margin-top: 33px;
   margin-bottom: 0;
@@ -13,6 +34,7 @@
   font-size: 15px;
   color: #8f9bb3;
   border-radius: 4px;
+  background-position: 205px 18px;
 }
 .search-form {
   padding-bottom: 80px;
@@ -33,60 +55,6 @@ input[type=checkbox] {
 .control-label input[type=checkbox] {
   margin-top: 20px;
 }
-input:not(input[type=submit]),
-form select,
-form textarea {
-    &:hover,
-    &:active {
-      border-color: #23242c;
-      border-radius: 7px;
-    }
-}
-
-//input[type=checkbox] {
-//  position: absolute !important;
-//  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-//  clip: rect(1px, 1px, 1px, 1px);
-//  padding:0 !important;
-//  border:0 !important;
-//  height: 1px !important;
-//  width: 1px !important;
-//  overflow: hidden;
-//}
-//input[type=checkbox] ~ label {
-//  position: relative;
-//  display: inline-block;
-//  line-height: 25px;
-//  padding-left: 40px;
-//  margin-top: 20px;
-//  cursor: pointer;
-//}
-//input[type=checkbox] ~ label::before{
-//  content: "";
-//  position: absolute;
-//  left: 0;
-//  top: 0;
-//  width: 25px;
-//  height: 25px;
-//  background-color: #ffffff;
-//  background-repeat: no-repeat;
-//  background-position: 0 0;
-//  border-radius: 3px;
-//}
-//input[type=checkbox]:checked ~ label::after {
-//  content: "";
-//  position: absolute;
-//  left: 0;
-//  top: 0;
-//  width: 25px;
-//  height: 25px;
-//  background-image: url("/img/checkmark.svg");
-//  background-repeat: no-repeat;
-//  background-position: center;
-//}
-//input[type=checkbox]:hover ~ label::before {
-//  background-color: #e5e5e5;
-//}
 
 .regular-form {
   margin-top: 55px;
@@ -138,10 +106,6 @@ input[type=date] {
   & input,
   & select {
     width: 295px;
-  }
-  & select {
-    padding-top: 7px;
-    padding-bottom: 7px;
   }
 }
 .registration-form .form-group input[type=text] {
@@ -222,8 +186,7 @@ input[type=date] {
 
 .add-task-form {
   & select {
-    padding-top: 7px;
-    padding-bottom: 7px;
+    background-position: 310px 14px;
     width: 344px;
   }
   & textarea {
@@ -313,4 +276,20 @@ form .has-error {
   font-family: Arial, sans-serif;
   font-size: 11px;
   color: #fa6400;
+}
+.location-icon {
+  background-image: url('../img/location-icon.svg');
+  background-repeat: no-repeat;
+  background-size: 19px 24px;
+  background-position: 630px 6px;
+}
+.budget-icon {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-image: url('../img/rouble.svg');
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  background-position: 160px 8px;
 }
