@@ -62,12 +62,31 @@
 .button-popup {
   display: none;
 }
-.response-card:hover .button-popup,
-.button-popup:hover {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
+//.response-card:hover .button-popup,
+//.button-popup:hover {
+//  display: flex;
+//  flex-direction: column;
+//  position: absolute;
+//  content: "";
+//  top: 22px;
+//  right: -145px;
+//}
+.response-card .button-popup {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: -10;
+    content: "";
+    top: 22px;
+    right: 0;
+
+  transition: all .2s ease-in-out;
+  transform: translateX(-90%);
+}
+.response-card:hover .button-popup {
+  transform: translateX(0%);
+
+  z-index: 2;
   content: "";
-  top: 22px;
   right: -145px;
 }
