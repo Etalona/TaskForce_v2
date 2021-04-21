@@ -15,7 +15,7 @@
         <div class="nav-wrapper">
             <ul class="nav-list">
                 <li class="list-item list-item--active">
-                    <a class="link link--nav" >Новое</a>
+                    <a class="link link--nav">Новое</a>
                 </li>
                 <li class="list-item">
                     <a href="#" class="link link--nav" >Мои задания</a>
@@ -67,7 +67,9 @@
             primis in faucibus. Integer id nisi nec nulla luctus lacinia non eu turpis. Etiam in ex
             imperdiet justo tincidunt egestas. Ut porttitor urna ac augue cursus tincidunt sit amet
             sed orci.</p>
-        <a href="#" class="button button--blue">Откликнуться на задание</a>
+        <a href="#" class="button button--blue action-btn" data-action="addition">Откликнуться на задание</a>
+        <a href="#" class="button button--orange action-btn" data-action="refusal">Отказаться от задания</a>
+        <a href="#" class="button button--pink action-btn" data-action="completion">Завершить задание</a>
         <div class="task-map">
             <img class="map" src="img/map.png"  width="725" height="346" alt="Новый арбат, 23, к. 1">
             <p class="map-address town">Москва</p>
@@ -148,7 +150,7 @@
         </div>
     </div>
 </main>
-<section class="pop-up pop-up--refusal">
+<section class="pop-up pop-up--refusal pop-up--close">
     <div class="pop-up--wrapper">
         <h4>Отказ от задания</h4>
         <p class="pop-up-text">
@@ -162,7 +164,7 @@
         </div>
     </div>
 </section>
-<section class="pop-up pop-up--completion">
+<section class="pop-up pop-up--completion pop-up--close">
     <div class="pop-up--wrapper">
         <h4>Завершение задания</h4>
         <p class="pop-up-text">
@@ -190,7 +192,7 @@
         </div>
     </div>
 </section>
-<section class="pop-up pop-up--addition">
+<section class="pop-up pop-up--addition pop-up--close">
     <div class="pop-up--wrapper">
         <h4>Добавление отклика к заданию</h4>
         <p class="pop-up-text">
@@ -216,5 +218,6 @@
     </div>
 </section>
 <div class="overlay"></div>
+<script src="js/script.js"></script>
 </body>
 </html>
