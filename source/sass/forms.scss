@@ -103,12 +103,16 @@ input[type=date] {
 
 .registration-form {
   padding-bottom: 122px;
-  & input,
-  & select {
+
+  .half-wrapper input, .half-wrapper select {
     width: 295px;
   }
+  select {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
 }
-.registration-form .form-group input[type=text] {
+.registration-form input {
   width: 642px;
 }
 .registration-form input[type=checkbox] {
@@ -251,9 +255,6 @@ input[type=submit] {
 .search-form input[type=submit] {
   width: 171px;
 }
-.help-block {
-  visibility: hidden;
-}
 .has-error  {
   & .help-block {
     visibility: visible;
@@ -276,6 +277,8 @@ form .has-error {
   font-family: Arial, sans-serif;
   font-size: 11px;
   color: #fa6400;
+  visibility: hidden;
+  min-height: 25px;
 }
 .location-icon {
   background-image: url('../img/location-icon.svg');
