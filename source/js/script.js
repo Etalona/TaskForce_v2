@@ -1,5 +1,7 @@
+const FILE_TYPES = ['gif', 'jpg', 'jpeg', 'png'];
 const overlay = document.querySelector('.overlay');
 const popup = document.querySelector('.pop-up');
+const imgPreviewElement = document.querySelector('.avatar-preview');
 
 const actionButtons = document.querySelectorAll('.action-btn');
 
@@ -23,4 +25,19 @@ buttonsClose.forEach(function (el) {
         overlay.classList.remove('db');
 
     })
+});
+document.querySelector('#button-input').addEventListener('change', function (evt) {
+    const file = evt.target.files[0];
+    const fileName = file.name.toLowerCase();
+
+    const matches = FILE_TYPES.some(function(it) {
+        return fileName.endsWith(it);
+    });
+    if (matches) {
+        const reader = new FileReader();
+        reader.addEventListener('load', function() {
+            imgPreviewElement.src = reader.result;
+        });
+        reader.readAsDataURL(file);
+    }
 });

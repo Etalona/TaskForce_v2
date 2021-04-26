@@ -72,9 +72,10 @@
             <div class="photo-editing">
                 <div>
                     <p class="form-label">Аватар</p>
-                    <img src="img/man-glasses.png" width="83" height="83">
+                    <img class="avatar-preview" src="img/man-glasses.png" width="83" height="83">
                 </div>
-                <a href="#" class="button button--black">Сменить аватар</a>
+                <input hidden value="Сменить аватар" type="file" id="button-input">
+                <label for="button-input" class="button button--black"> Сменить аватар</label>
             </div>
             <div class="form-group">
                 <label class="control-label" for="profile-name">Ваше имя</label>
@@ -136,5 +137,6 @@
         </form>
     </div>
 </main>
+<script src="js/script.js"></script>
 </body>
 </html>
