@@ -4,6 +4,9 @@
   border-radius: 15px;
   margin-bottom: 20px;
   position: relative;
+  & .feedback-wrapper:last-child {
+   flex-grow: 1;
+  }
 }
 .customer-photo {
   border-bottom-left-radius: 15px;
@@ -14,6 +17,9 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 12px 15px;
+  & .stars-rating {
+    align-self: flex-end;
+  }
 }
 .feedback {
   margin-top: 0;

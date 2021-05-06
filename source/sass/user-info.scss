@@ -40,10 +40,9 @@
 }
 .specialization-bio {
   display: flex;
-
-  div {
-    width: 50%;
-  }
+}
+.specialization {
+  max-width: 427px;
 }
 .head-info {
   font-weight: 700;
@@ -56,6 +55,7 @@
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   margin-right: 35px;
 }
 .special-item {
